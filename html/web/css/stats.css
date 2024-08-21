@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* 팀 순위 */
+
+ul.pageLink.stats {
+  margin: -30px 0 60px;
+}
+
+ul.pageLink.stats li {
+  width: 50%;
+}
+
+table.ranking {
+  margin-bottom: 60px;
+}
+
+table.ranking thead th {
+  cursor: pointer;
+}
+
+table.ranking thead th span {
+  display: inline-block;
+  padding-right: 8px;
+  background: url("../images/stats/bgDownOff.png") no-repeat 100% 50%;
+}
+
+table.ranking thead th.headerUp span {
+  background: url("../images/stats/bgUpOff.png") no-repeat 100% 50%;
+}
+
+table.ranking thead th.headerUp.headerSortUp span {
+  background: url("../images/stats/bgUpOn.png") no-repeat 100% 50%;
+}
+
+table.ranking thead th.headerSortDown span {
+  background: url("../images/stats/bgDownOn.png") no-repeat 100% 50%;
+}
+
+table.ranking tbody tr > * {
+  font-size: 1.085em;
+}
+
+table.ranking tr > * {
+  box-sizing: border-box;
+}
+
+table.ranking tr > *.column {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  font-weight: 700;
+}
+
+table.ranking tr.heroes > * {
+  border: 2px solid #cf0b42;
+  border-width: 2px 0;
+  color: #bb1b39;
+  font-weight: 700;
+  background-color: #ffeff2;
+}
+
+table.ranking tr.heroes > *:first-child {
+  border-width: 2px 0 2px 2px;
+}
+
+table.ranking tr.heroes > *.lastColumn {
+  border-width: 2px 2px 2px 0;
+}
+
+table.ranking tr:first-child.heroes > * {
+  padding-top: 2px;
+  background: #ffeff2 url("../images/stats/bgHeroes.png") repeat-x 0 0;
+}
+
+div.rankWrap {
+  position: relative;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+div.rankWrap table {
+  width: 708px;
+  margin: 0 1px;
+}
+
+div.rankWrap > span {
+  position: absolute;
+  top: 40px;
+  width: 305px;
+  height: 100%;
+  z-index: 1;
+}
+
+div.rankWrap span.left {
+  left: 0;
+}
+
+div.rankWrap span.right {
+  right: 0;
+}
+
+div.rankWrap > button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+
+div.rankWrap > button:hover,
+div.rankWrap > button:active,
+div.rankWrap > button:focus,
+div.rankWrap > button.on {
+  display: block;
+}
+
+div.rankWrap button.toLeft {
+  left: 0;
+}
+
+div.rankWrap button.toRight {
+  right: 0;
+}

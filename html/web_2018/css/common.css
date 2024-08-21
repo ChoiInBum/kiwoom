@@ -1,0 +1,1141 @@
+@charset "utf-8";
+/* 페이지 타이틀 */
+
+div.contentHead {
+  clear: both;
+  margin: 40px 0 60px;
+  line-height: 1;
+  text-align: center;
+}
+
+div.contentHead h3 {
+  margin-bottom: 14px;
+  color: #000;
+  font-size: 2.67em;
+  font-weight: 400;
+}
+
+div.contentHead p {
+  color: #b8b8b8;
+  font-size: 1.17em;
+}
+
+/* 탐색 위치 */
+
+ol.location {
+  float: right;
+  height: 32px;
+  margin-top: -32px;
+}
+
+ol.location li {
+  float: left;
+  margin-left: 6px;
+  color: #b8b8b8;
+  font-size: 1.085em;
+  line-height: 32px;
+  overflow: visible;
+}
+
+ol.location li.here {
+  color: #555;
+  border-bottom: 1px solid #555;
+}
+
+ol.location li:first-child {
+  padding-left: 15px;
+  background: url("../images/common/dotLocation.png") no-repeat 0 50%;
+}
+
+/* 최상위 이동 버튼 */
+
+span.toTop {
+  display: none;
+  position: fixed;
+  bottom: 404px;
+  left: 0;
+  width: 100%;
+  min-width: 1240px;
+  height: 43px;
+  z-index: -1;
+}
+
+span.toTop a {
+  display: block;
+  position: relative;
+  left: 50%;
+  overflow: hidden;
+  width: 55px;
+  height: 55px;
+  text-align: left;
+  text-indent: -10000em;
+  margin-left: 525px;
+  border: 1px solid #dfdfdf;
+  background: url("../images/common/btnTop.png") no-repeat 50% 50%;
+}
+
+/* 페이징 */
+
+div.pageNav {
+  float: right;
+  position: relative;
+  left: -50%;
+  height: 26px;
+  margin-top: 10px;
+  margin-bottom: 26px;
+  letter-spacing: -0.0625em;
+}
+
+div.pageNav + * {
+  clear: both;
+}
+
+div.pageNav > * {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+div.pageNav span.prev,
+div.pageNav span.next {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+div.pageNav span.prev a,
+div.pageNav span.next a {
+  float: left;
+  height: 24px;
+  padding: 0 11px;
+  border-left: 1px solid #ccc;
+  color: #666;
+  line-height: 24px;
+}
+
+div.pageNav span.prev a:first-child,
+div.pageNav span.next a:first-child {
+  border-left: 0;
+}
+
+div.pageNav span.prev a span {
+  margin-right: 4px;
+  color: #bb1b39;
+}
+
+div.pageNav span.next a span {
+  margin-left: 4px;
+  color: #bb1b39;
+}
+
+div.pageNav button .next {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 11px;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+}
+div.pageNav button .next:after {
+  content: ">";
+  display: inline-block;
+  margin-left: 4px;
+  color: #bb1b39;
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+div.pageNav button .prev {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 11px;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+}
+div.pageNav button .prev:before {
+  content: "<";
+  display: inline-block;
+  margin-right: 4px;
+  color: #bb1b39;
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+div.pageNav span.page {
+  margin: 0 10px;
+}
+
+div.pageNav span.page a {
+  float: left;
+  margin: 0 1px;
+  padding: 0 9px;
+  font-size: 1.33em;
+  line-height: 24px;
+}
+
+div.pageNav span.page a.on {
+  height: 24px;
+  border: 1px solid #cf0b42;
+  border-radius: 4px;
+  color: #bb1b39;
+}
+
+div.pageNav a:hover,
+div.pageNav a:active,
+div.pageNav a:focus {
+  background-color: #ececec;
+}
+
+/* 게시판 탐색 */
+
+div.boardNav {
+  margin-top: 10px;
+  height: 30px;
+  margin-bottom: 80px;
+  letter-spacing: -0.0625em;
+  text-align: center;
+}
+
+div.boardNav > * {
+  display: inline-block;
+  height: 28px;
+  margin: 0 2px;
+  padding: 0 16px;
+  border: 2px solid #bb1b39;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: 700;
+  background-color: #bb1b39;
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+div.boardNav > *.strong {
+  color: #bb1b39;
+  background-color: #fff;
+}
+
+div.boardNav > * span {
+  color: #bb1b39;
+}
+
+div.boardNav > *.prev {
+  float: left;
+  margin: 0;
+  color: #bb1b39;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+div.boardNav > *.prev span {
+  margin-right: 4px;
+}
+
+div.boardNav > *.next {
+  float: right;
+  margin: 0;
+  color: #bb1b39;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+div.boardNav > *.next span {
+  margin-left: 4px;
+}
+
+/* 게시판 검색 */
+
+div.boardSearch {
+  padding: 20px 0;
+  border: 1px solid #e5e5e5;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+div.boardSearch * {
+  display: inline-block;
+  height: 29px;
+  box-sizing: border-box;
+  line-height: 27px;
+  vertical-align: middle;
+}
+
+div.boardSearch input[type="text"] {
+  width: 303px;
+  padding: 0 10px;
+  border: 1px solid #939393;
+  background-color: #fff;
+}
+
+div.boardSearch button {
+  width: 55px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.92em;
+  background-color: #bb1b39;
+  line-height: 29px;
+}
+
+/* 게시판 보기 */
+
+div.boardView {
+  margin-bottom: 20px;
+  border: 2px solid #000;
+  border-width: 2px 0;
+  letter-spacing: -0.0625em;
+}
+
+div.boardView > h4 {
+  margin: 30px 0 15px;
+  color: #000;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.45;
+}
+
+div.boardView > span {
+  display: block;
+  margin-bottom: 30px;
+  color: #666;
+  line-height: 1;
+}
+
+div.boardView > span strong {
+  margin-right: 10px;
+  padding-right: 11px;
+  font-weight: 400;
+  background: url("../images/common/bgBarV.png") no-repeat 100% 50%;
+}
+
+div.boardView > span a.notify {
+  margin-left: 10px;
+  padding-left: 24px;
+  border-left: 1px solid #e5e5e5;
+  color: #666;
+  background: #fff url("../images/common/bgNotify.png") no-repeat 10px 50%;
+}
+
+div.boardView div.content {
+  margin-bottom: 80px;
+  padding-top: 40px;
+  border-top: 1px dotted #999;
+  color: #333;
+  font-size: 1.25em;
+}
+
+div.boardView div.content img {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+div.boardView ul.sns {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+div.boardView ul.sns li {
+  float: left;
+  margin-right: 3px;
+}
+
+/* 결과 없음 */
+
+p.noResult {
+  border: 2px solid #666;
+  color: #c02a46;
+  font-size: 1.66em;
+  font-weight: 700;
+  line-height: 108px;
+  text-align: center;
+}
+
+/* 이전 다음글 목록 */
+
+div.articleList {
+  padding: 17px 0;
+  border: 1px solid #999;
+  border-width: 1px 0;
+}
+
+div.articleList table {
+  width: 100%;
+}
+
+div.articleList table tr > * {
+  padding: 0;
+  border-top: 1px dotted #999;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1;
+}
+
+div.articleList table tr:first-child > * {
+  border-top: 0;
+}
+
+div.articleList table td {
+  padding: 12px 0;
+  color: #a9a9a9;
+  font-size: 0.92em;
+}
+
+div.articleList table td *.thum {
+  display: inline-block;
+  position: relative;
+  /* width:120px; */
+  height: 80px;
+  margin-right: 20px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+div.articleList table td *.thum img {
+  /*width:120px;*/
+  height: 80px;
+}
+
+div.articleList table td *.thum img.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 34px;
+  height: 24px;
+  margin: -12px 0 0 -17px;
+  z-index: 1;
+}
+
+div.articleList table td.name {
+  padding-right: 10px;
+  text-align: right;
+  background: url("../images/common/bgBarV.png") no-repeat 100% 50%;
+}
+
+div.articleList table td.date {
+  text-align: right;
+}
+
+div.articleList table td:first-child {
+  color: #666;
+  font-size: 1.25em;
+}
+
+div.articleList table tr.current td {
+  color: #000;
+}
+
+div.articleList table tr.current td span {
+  font-size: 0.8em;
+}
+
+/* 상단 링크 */
+
+ul.pageLink {
+  width: 100%;
+  height: 46px;
+  margin-bottom: 60px;
+  border: 1px solid #ccc;
+  border-width: 1px 1px 1px 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  overflow: visible;
+}
+
+ul.pageLink li {
+  float: left;
+  position: relative;
+  height: 44px;
+  border-left: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+ul.pageLink li a {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  font-size: 1.17em;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: -0.0425em;
+}
+
+ul.pageLink li a:hover,
+ul.pageLink li a:active,
+ul.pageLink li a:focus,
+ul.pageLink li a.on {
+  border: 3px solid #cf0b42;
+  color: #bb1b39;
+  font-weight: 700;
+  background-color: #fff;
+  line-height: 38px;
+  z-index: 1;
+}
+
+.tabBorder:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.tabBorder li {
+  float: left;
+  background-color: #fafafa;
+}
+
+.tabBorder li a {
+  display: block;
+  height: 46px;
+  font-size: 1.167em;
+  color: #555;
+  text-align: center;
+  line-height: 44px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: url("../images/common/bgLineTab.png") no-repeat 0 50%;
+  box-sizing: border-box;
+}
+
+.tabBorder li:first-child a {
+  border-left: 1px solid #ccc;
+  background: none;
+}
+
+.tabBorder li:last-child a {
+  border-right: 1px solid #ccc;
+}
+
+.tabBorder li a.on {
+  font-weight: 500;
+  color: #bb1b39;
+  line-height: 42px;
+  border: 3px solid #cf0b42;
+  background-color: #fff;
+}
+
+.tabBorder.stadium {
+  margin-bottom: 30px;
+}
+
+.tabBorder.stadium li {
+  width: 25%;
+}
+
+.tabBorder.players {
+  margin: 40px 0 20px;
+}
+
+.tabBorder.players li {
+  width: 12.5%;
+}
+
+/* 게시판 코멘트 */
+
+div.boardComment {
+  margin-bottom: 30px;
+}
+
+div.boardComment > h5,
+div.boardComment > span {
+  float: left;
+  margin: 0 8px 10px 0;
+  color: #000;
+  font-size: 1.17em;
+  font-weight: 800;
+  line-height: 1;
+}
+
+div.boardComment > div {
+  clear: both;
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid #999;
+  overflow: hidden;
+}
+
+div.boardComment > div textarea {
+  float: left;
+  width: 619px;
+  height: 90px;
+  padding: 17px 20px;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 1.085em;
+  resize: none;
+}
+
+div.boardComment > div textarea.focus {
+  background-image: none;
+}
+
+div.boardComment > div ul.sns {
+  display: none;
+  margin: 12px 20px;
+}
+
+div.boardComment > div ul.sns li {
+  float: left;
+  height: 25px;
+  margin-right: 3px;
+}
+
+div.boardComment > div ul.sns li a {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #fff url("../images/common/bgSNS.png") no-repeat 0 0;
+}
+
+div.boardComment > div ul.sns li a.kakao {
+  background-position: 0 -26px;
+}
+
+div.boardComment > div ul.sns li a.kakao:hover,
+div.boardComment > div ul.sns li a.kakao:active,
+div.boardComment > div ul.sns li a.kakao:focus,
+div.boardComment > div ul.sns li a.kakao.on {
+  background-position: 0 0;
+}
+
+div.boardComment > div ul.sns li a.facebook {
+  background-position: -26px -26px;
+}
+
+div.boardComment > div ul.sns li a.facebook:hover,
+div.boardComment > div ul.sns li a.facebook:active,
+div.boardComment > div ul.sns li a.facebook:focus,
+div.boardComment > div ul.sns li a.facebook.on {
+  background-position: -26px 0;
+}
+
+div.boardComment > div ul.sns li a.twitter {
+  background-position: -52px -26px;
+}
+
+div.boardComment > div ul.sns li a.twitter:hover,
+div.boardComment > div ul.sns li a.twitter:active,
+div.boardComment > div ul.sns li a.twitter:focus,
+div.boardComment > div ul.sns li a.twitter.on {
+  background-position: -52px 0;
+}
+
+div.boardComment > div ul.sns li a span {
+  position: relative;
+  z-index: -1;
+}
+
+div.boardComment > div button {
+  float: right;
+  width: 89px;
+  height: 90px;
+  color: #fff;
+  background-color: #bb1b39;
+  letter-spacing: -0.0625em;
+}
+
+div.boardComment > ol {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #999;
+}
+
+div.boardComment > ol li {
+  padding-top: 20px;
+  border-top: 1px dotted #999;
+}
+
+div.boardComment > ol li:first-child {
+  border-top: 0;
+}
+
+div.boardComment > ol li > img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+div.boardComment > ol li > div {
+  margin-left: 70px;
+  font-size: 1.085em;
+  line-height: 1;
+  overflow: hidden;
+}
+
+div.boardComment > ol li > div > strong {
+  float: left;
+  margin-bottom: 8px;
+  color: #414141;
+  font-weight: 400;
+}
+
+div.boardComment > ol li > div > strong span {
+  margin-left: 10px;
+  padding-left: 11px;
+  background: #fff url("../images/common/bgBarV.png") no-repeat 0 50%;
+}
+
+div.boardComment > ol li > div > span {
+  float: right;
+}
+
+div.boardComment > ol li > div > span a {
+  float: left;
+  margin-left: 10px;
+  padding-left: 11px;
+  color: #414141;
+  background: #fff url("../images/common/bgBarV.png") no-repeat 0 50%;
+}
+
+div.boardComment > ol li > div > span a:first-child {
+  margin-left: 0;
+  padding-left: 0;
+  background-image: none;
+}
+
+div.boardComment > ol li > div > span a.notify {
+  padding-left: 14px;
+  color: #b2b2b2;
+  background: #fff url("../images/common/bgNotify.png") no-repeat 0 50%;
+}
+
+div.boardComment > ol li > div > span a:hover,
+div.boardComment > ol li > div > span a:active,
+div.boardComment > ol li > div > span a:focus {
+  text-decoration: underline;
+}
+
+div.boardComment > ol li > div p {
+  clear: both;
+  margin-bottom: 15px;
+  color: #666;
+  line-height: 1.8;
+  letter-spacing: -0.0325em;
+  overflow: hidden;
+}
+
+button.commentMore {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #bb1b39;
+  font-weight: 700;
+  font-size: 1.085em;
+  text-align: center;
+  line-height: 46px;
+}
+
+.noData {
+  height: 200px !important;
+  padding: 220px 0 0 !important;
+  text-align: center;
+  vertical-align: top;
+  border-top: 2px solid #000 !important;
+  box-sizing: content-box !important;
+  background: url("../images/common/noData.png") no-repeat 50% 100px;
+}
+
+.noData strong {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 2.167em;
+  color: #820024;
+}
+
+.noData p {
+  font-size: 1.083em;
+  color: #b8b8b8;
+  line-height: 22px;
+}
+
+/* 테이블 */
+
+table.data {
+  width: 100%;
+  margin-bottom: 0px;
+  border: 1px solid #000;
+  border-width: 2px 0 1px;
+}
+
+table.data tr > * {
+  height: 35px;
+  padding: 0;
+  box-sizing: border-box;
+  color: #666;
+  font-size: 0.92em;
+  text-align: center;
+  letter-spacing: -0.0425em;
+}
+
+table.data thead th {
+  border-bottom: 1px solid #626262;
+  font-weight: 400;
+  background-color: #f5f5f5;
+}
+
+table.data tbody tr > * {
+  border-top: 1px solid #dbdbdb;
+}
+
+table.data tbody tr:first-child > * {
+  height: 34px;
+  border-top: 0;
+}
+
+table.data tbody th {
+  font-weight: 700;
+}
+
+table.input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  border-width: 2px 0 1px;
+}
+
+table.input tr > * {
+  height: 37px;
+  padding: 0;
+  border-top: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  color: #666;
+  font-weight: 400;
+  font-size: 1.085em;
+  letter-spacing: -0.0425em;
+}
+
+table.input tr:first-child > * {
+  height: 36px;
+  border-top: 0;
+}
+
+table.input tr th {
+  border-right: 1px solid #dbdbdb;
+  background-color: #f5f5f5;
+}
+
+table.input tr th img {
+  margin-top: 4px;
+  vertical-align: top;
+}
+
+table.input tr td {
+  padding-left: 30px;
+}
+
+table.input label {
+  display: inline-block;
+  margin-right: 20px;
+  line-height: 13px;
+  vertical-align: middle;
+}
+
+table.input label input[type="checkbox"],
+table.input label input[type="radio"] {
+  float: left;
+  width: 13px;
+  height: 13px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  line-height: 13px;
+  vertical-align: middle;
+}
+
+table.input input[type="text"],
+table.input input[type="password"],
+table.input button,
+table.input select {
+  display: inline-block;
+  height: 28px;
+  padding: 0 10px;
+  border: 1px solid #b2b2b2;
+  box-sizing: border-box;
+  line-height: 26px;
+  vertical-align: middle;
+}
+
+table.input select {
+  padding-right: 0;
+}
+
+table.input button {
+  margin: 0 5px;
+  border-color: #ccc;
+  border-radius: 3px;
+  color: #8d8d8d;
+  font-size: 0.92em;
+  vertical-align: middle;
+}
+
+/* 레이어 팝업 */
+
+div.layer {
+  display: none;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  background-color: #fff;
+  letter-spacing: -0.0425em;
+  z-index: 9999;
+}
+
+div.layer > h1 {
+  height: 40px;
+  color: #fff;
+  font-size: 1.17em;
+  background-color: #6a001d;
+  line-height: 40px;
+  text-align: center;
+}
+
+div.layer > button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+div.layer div.boardNav {
+  margin-bottom: 0;
+}
+
+div.layer > div.body {
+  padding: 30px 30px 0;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+div.layerBG {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  z-index: 9000;
+}
+
+div.layer.v240325 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 레이어팝업 > 코멘트 수정 */
+
+#modComment {
+  width: 480px;
+  height: 310px;
+  margin: -155px 0 0 -240px;
+}
+div#modComment.v240325 {
+  margin: 0;
+}
+#modComment textarea {
+  width: 100%;
+  height: 160px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+/* 레이어팝업 > 코멘트 신고 */
+
+#notifyComment {
+  width: 480px;
+  padding-bottom: 30px;
+}
+
+#notifyComment table {
+  width: 100%;
+  margin-top: -17px;
+}
+
+#notifyComment tr > * {
+  border-top: 1px solid #dbdbdb;
+  font-size: 1.085em;
+  font-weight: 400;
+  text-align: left;
+  line-height: 37px;
+  vertical-align: top;
+}
+
+#notifyComment tr:first-child > * {
+  border-top: 0;
+}
+
+#notifyComment tr th {
+  color: #000;
+}
+
+#notifyComment tr td {
+  color: #666;
+}
+
+#notifyComment tr td ul {
+  margin-bottom: 20px;
+}
+
+#notifyComment tr td ul li {
+  margin-top: 16px;
+}
+
+#notifyComment tr td ul li label {
+  display: inline-block;
+  line-height: 13px;
+  vertical-align: middle;
+}
+
+#notifyComment tr td ul li label input[type="radio"] {
+  float: left;
+  width: 13px;
+  height: 13px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  line-height: 13px;
+  vertical-align: middle;
+}
+
+#notifyComment strong {
+  display: block;
+  margin-bottom: 20px;
+  border: 2px solid #666;
+  color: #666;
+  font-size: 0.92em;
+  font-weight: 400;
+  background-color: #f5f5f5;
+  text-align: center;
+  line-height: 36px;
+}
+
+/* 셀렉트박스 */
+
+div.selectCalendar {
+  margin-bottom: -10px;
+  color: #bb1b39;
+  font-family: Armata;
+  font-size: 2.67em;
+  font-weight: 800;
+  text-align: center;
+}
+
+div.selectCalendar button {
+  margin: 0 15px;
+  vertical-align: middle;
+}
+
+div.selectCalendar button.submit {
+  width: 60px;
+  height: 38px;
+  margin: 0 0 0 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #888;
+  font-size: 0.4em;
+  font-family: "NanumBarunGothic";
+  font-weight: 400;
+}
+
+.sbHolder {
+  display: inline-block;
+  position: relative;
+  width: 90px;
+  height: 36px;
+  padding-right: 12px;
+  border: 1px solid #e5e5e5;
+  color: #bb1b39;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.sbSelector {
+  display: block;
+  font-size: 32px;
+  font-family: Armata;
+  font-weight: 800;
+  letter-spacing: -0.0925em;
+  line-height: 36px;
+  outline: 0;
+  line-height: 36px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sbToggle {
+  position: absolute;
+  width: 12px;
+  height: 36px;
+  top: 0;
+  right: 0;
+  background: url("../images/common/bgSelect.png") no-repeat 0 50%;
+  outline: 0;
+  z-index: 200;
+}
+
+.sbOptions {
+  position: absolute;
+  top: 38px !important;
+  left: -1px;
+  overflow-y: auto;
+  width: 100%;
+  max-height: 500px !important;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #333;
+  z-index: 200;
+  letter-spacing: -0.0425em;
+}
+
+.sbOptions a {
+  display: block;
+  height: 26px;
+  padding-right: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  line-height: 26px;
+}
+
+.sbOptions a:link,
+.sbOptions a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus {
+  background-color: #ccc;
+}
+
+/* S : 구단소식 230220 */
+/* .heroesNews-view__video > div{position: relative; width: 100%; padding-bottom: 56.25%;margin-bottom: 30px;}
+.heroesNews-view__video > div > video,
+.heroesNews-view__video > div > iframe{position: absolute;width: 100%; height: 100%; top: 0; left: 0; } */
+/* E : 구단소식 230220 */
+
+.boardView .content video,
+.boardView .content iframe {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.boardView .content iframe {
+  min-height: 400px;
+}
+.boardView .content video {
+  max-height: 465px;
+}

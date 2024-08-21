@@ -1,0 +1,2405 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+  <head>
+    <meta
+      name="ahrefs-site-verification"
+      content="35b97ccce36ccdbe4f8aae9090c553c5ccf4fc3a3e641be8494299721f36a11b"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>INOO HEROES</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <link
+      href="./html/web_2018/css/font.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./html/web_2018/css/default.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./html/web_2018/css/common.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="./html/web_2018/css/layout_2023.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./html/web_2018/css/index_2023.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./html/web_2018/css/swiper-9.0.5.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script
+      src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.ko.GU89GoD0A6U.O/m=client/rt=j/sv=1/d=1/ed=1/am=AAAg/rs=AHpOoo-SbuL-nW9Yn3IkFMAPjAQzxyTZSQ/cb=gapi.loaded_0?le=scs"
+      async=""
+    ></script>
+    <script
+      src="./html/web_js/jquery-1.12.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./html/web_js/jquery.bxslider.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./html/web_2018/js/jquery.parallax.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="./html/web_2018/js/jquery.heroes.ui_2023.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./html/web_2018/js/swiper-9.0.5.js"
+      type="text/javascript"
+    ></script>
+
+    <script src="/html/web_js/common.js" type="text/javascript"></script>
+
+    <!-- 유튜브를  위한 JS -->
+    <script src="./html/web_2018/js/u2_auth.js"></script>
+    <script src="./html/web_2018/js/u2_top.js"></script>
+    <script
+      src="https://apis.google.com/js/client.js?onload=googleApiClientReady"
+      gapi_processed="true"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        // S :  main visual swiper
+        var swiper1 = new Swiper(".mainVisual .swiper-container", {
+          slidesPerView: 1,
+          //centeredSlides: false,
+          //spaceBetween: 0,
+          //speed: 1000,
+          //grabCursor: false,
+          loop: false,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".mainVisual .swiper-container .swiper-pagination",
+            clickable: true,
+          },
+        });
+        // E : main visual swiper
+
+        // S :  game result swiper
+        if ($(".mainResult").length > 0) {
+          var swiper2 = new Swiper(
+            ".mainResult .team-arg-box .swiper-container",
+            {
+              slidesPerView: 1,
+              speed: 1000,
+              loop: false,
+              initialSlide: 4,
+              navigation: {
+                prevEl: ".mainResult .team-arg-box .swiper-button-prev",
+                nextEl: ".mainResult .team-arg-box .swiper-button-next",
+              },
+            }
+          );
+        }
+        // E :  game result swiper
+
+        // S :  main sns swiper
+        /* var swiper3 = new Swiper(".mainSns .swiper-container",{
+          slidesPerView: "auto",
+          centeredSlides: true,
+          spaceBetween: 20,
+          loop: false,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination:{
+            el: ".mainSns .swiper-container .swiper-pagination",
+          }
+        }); */
+        // E : main sns swiper
+
+        // S :  main sns swiper
+        /* var swiper4 = new Swiper(".mainNews .swiper-container",{
+          slidesPerView: "auto",
+          //centeredSlides: true,
+          spaceBetween: 20,
+          loop: false,
+          / * pagination:{
+            el: ".mainSns .swiper-container .swiper-pagination",
+          } * /
+        }); */
+        // E : main sns swiper
+      });
+    </script>
+
+    <!-- Google tag (gtag.js) 0509 pc-->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-JPF4S0MFR9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-JPF4S0MFR9");
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var popupChk;
+
+      $(document).ready(function () {});
+
+      function openMainPopup(no, w, h, t, l, scroll_x, scroll_y) {
+        window.open(
+          "popup.do?no=" + no,
+          "MAIN_POPUP_" + no,
+          "width=" +
+            w +
+            ", height=" +
+            h +
+            ", top=" +
+            t +
+            ", left=" +
+            l +
+            ", fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbars=yes"
+        );
+      }
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".movie-arg .close").on("click", function (e) {
+          e.preventDefault();
+          $(".movie-arg").hide();
+        });
+        /* var movielayerChk = getCookie("movie-layer");
+        if(movielayerChk != "Y"){
+          $('.movie-arg').show();
+        }
+        $('.movie-arg .btnYoutube').on('click', function(e){
+          e.preventDefault();
+          $(".movie-arg .video .youMov").css({"z-index":2}).html('<iframe id="youtubeIframe" width="100%" height="100%" src="https://www.youtube.com/embed/SnJbOVYxai0?wmode=opaque&autoplay=1&controls=1&autohide=1&showinfo=0&loop=1&mute=0&enablejsapi=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>');
+        }); */
+        $(document).on("click", ".youtube2020Type .thum", function (e) {
+          e.preventDefault();
+          $(".movie-arg").show();
+          var iframelink = $("#iframelink").val();
+          $(".movie-arg .video .youMov").css({ "z-index": 2 }).html(iframelink);
+        });
+      });
+      function movieClosePopup(no) {
+        setCookie(no, "Y", 1);
+        $(".movie-arg .close").trigger("click");
+      }
+
+      $(document).ready(function () {
+        $(".layer-pop-arg .close").on("click", function (e) {
+          e.preventDefault();
+          $(".layer-pop-arg").hide();
+          // $(this).closest(".layer-pop-arg").hide();
+        });
+        /* var layerChk = getCookie("popAct1");
+        if(layerChk != "Y"){
+          $('.popAct1').show();
+        } */
+
+        /* var layerChk2 = getCookie("popAct2");
+        if(layerChk2 != "Y"){
+          $('.popAct2').show();
+        } */
+      });
+      function layerClosePopup(no) {
+        setCookie(no, "Y", 1);
+        $("." + no)
+          .find(".close")
+          .trigger("click");
+      }
+    </script>
+
+    <div class="movie-arg new2020">
+      <div class="mov-box">
+        <a href="#" class="close">close</a>
+        <div class="tit">히어로즈 영상</div>
+        <div class="video">
+          <!-- <a href="#" class="btnYoutube"><img src="/html/front/web_2018/images/index/btn_movie.png" alt="video play" /></a> -->
+          <div class="youMov"></div>
+          <!-- <div class="youMov" style="z-index:2;"><iframe id="youtubeIframe" width="100%" height="100%" src="https://www.youtube.com/embed/ddYGkhte2tM?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="layer-pop-arg popAct1 new-size">
+      <div class="layer-box">
+        <a href="#" class="close">close</a>
+        <div class="tit">2023시즌 연간회원 모집</div>
+        <div class="photo">
+          <a href="https://www.heroesbaseball.co.kr/story/heroesNews/view.do?num=21150"><img src="/html/front/web_2018/images/popup/pop230201.jpg" alt=""></a>
+        </div>
+        <div class="btn-line">
+          <label>
+            <input type="checkbox" onclick="layerClosePopup('popAct1')" />
+            오늘 하루 창 닫기
+          </label>
+        </div>
+  
+      </div>
+    </div> -->
+
+    <!-- <div class="layer-pop-arg popAct2 new-size">
+      <div class="layer-box">
+        <a href="#" class="close">close</a>
+        <div class="tit">주부야구특공대 11기 모집</div>
+        <div class="photo">
+          <a href="/story/heroesNews/view.do?num=21176"><img src="/html/front/web_2018/images/popup/pop230213.png" alt="주부야구특공대 11기 모집"></a>
+        </div>
+        <div class="btn-line">
+          <label>
+            <input type="checkbox" onclick="layerClosePopup('popAct2')" />
+            오늘 하루 창 닫기
+          </label>
+        </div>
+  
+      </div>
+    </div> -->
+
+    <!--03 <div class="bgPlayer"></div> -->
+    <!--  <div class="bgPlayer filter eventOut"></div> -->
+    <!--03 <div class="bgPlayer filter"></div> -->
+
+    <!-- HEADER -->
+    <!-- <div id="header" class="eventOut "> -->
+    <div id="header" class="">
+      <!-- S : /WEB-INF/views/jsp/layout/top_menu.jsp -->
+      <!-- <h1><a href="/index.do">KIWOOM HEROES</a></h1>-->
+      <div class="innerWrap bgc">
+        <div class="navGlobal">
+          <a href="/user/login.do">로그인</a
+          ><a href="/user/signup/agreement.do">회원가입</a>
+
+          <a href="/fans/qna/list.do">안내 및 Q&amp;A</a>
+          <!-- <a href="http://ticket.interpark.com/contents/Promotion/MDShopList?dispNo=001780002001" target="_blank" title="새 창 열림" class="btnShop">SHOP</a> -->
+          <a
+            href="http://inpk.kr/heroes"
+            target="_blank"
+            title="새 창 열림"
+            class="btnShop"
+            >SHOP</a
+          >
+
+          <!-- <a href="#"><img src="/html/front/web/images/common/linkEnglish.png" alt="English Site" /></a> -->
+          <!-- <a href="/eng/index.do">English</a> -->
+
+          <ul class="sns">
+            <li>
+              <a
+                href="https://www.youtube.com/user/heroesbaseballclub/"
+                target="_blank"
+                title="새 창 열림"
+                class="sns01"
+                >You tube</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/heroesbaseballclub/"
+                target="_blank"
+                title="새 창 열림"
+                class="sns02"
+                >instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/kiwoomheroesbaseballclub"
+                target="_blank"
+                title="새 창 열림"
+                class="sns03"
+                >facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav">
+        <div class="innerWrap">
+          <div id="gnb">
+            <div class="depth1">
+              <h1><a href="./index.html">KIWOOM HEROES</a></h1>
+
+              <!-- <a href="/heroes/introduce/introduce.do" class="current"><span>HEROES</span></a> -->
+              <a href="/heroes/introduce/introduce.do"><span>HEROES</span></a>
+              <a href="/players/all/list.do"><span>PLAYERS</span></a>
+              <a href="./team1.html"><span>STATS</span></a>
+              <a href="/story/heroesNews/list.do"><span>STORY</span></a>
+              <a href="/fans/heroesBbs/list.do"><span>FANS</span></a>
+
+              <!-- <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul> -->
+            </div>
+
+            <div class="depth2">
+              <div class="box">
+                <dl>
+                  <dt><a href="/heroes/introduce/introduce.do">HEROES</a></dt>
+                  <dd>
+                    <ul>
+                      <li>
+                        <a href="/heroes/introduce/introduce.do"
+                          >히어로즈 소개</a
+                        >
+                      </li>
+                      <!-- <li><a href="/heroes/people/people.do">구단 사람들</a></li> -->
+                      <li><a href="/heroes/bi/bi.do">구단 BI</a></li>
+                      <li>
+                        <a href="/heroes/sponsor/sponsor.do">구단 파트너</a>
+                      </li>
+                      <li><a href="/heroes/stadium/skydome.do">구장안내</a></li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><a href="/players/all/list.do">PLAYERS</a></dt>
+                  <dd>
+                    <ul>
+                      <li><a href="/players/all/list.do">전체</a></li>
+                      <li><a href="/players/coach/list.do">코칭스탭</a></li>
+                      <li><a href="/players/pitcher/list.do">투수</a></li>
+                      <li><a href="/players/catcher/list.do">포수</a></li>
+                      <li><a href="/players/infielder/list.do">내야수</a></li>
+                      <li><a href="/players/outfielder/list.do">외야수</a></li>
+                    </ul>
+                  </dd>
+                </dl>
+
+                <dl>
+                  <dt><a href="/stats/team/list1.do">STATS</a></dt>
+                  <dd>
+                    <ul>
+                      <li><a href="./team1.html">팀순위</a></li>
+                      <li><a href="./pitcher.html">투수성적</a></li>
+                      <li><a href="./batter1.html">타자성적</a></li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><a href="/story/heroesNews/list.do">STORY</a></dt>
+                  <dd>
+                    <ul>
+                      <li><a href="/story/heroesNews/list.do">구단 소식</a></li>
+                      <!-- <li><a href="/story/news/list.do">히어로즈 뉴스</a></li> -->
+                      <li>
+                        <a href="/story/movie/youtube-list.do">히어로즈 영상</a>
+                      </li>
+                      <li><a href="/story/photo/list.do">히어로즈 사진</a></li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><a href="/fans/heroesBbs/list.do">FANS</a></dt>
+                  <dd>
+                    <ul>
+                      <li>
+                        <a href="/fans/cheer/introTeam-list.do">응원단</a>
+                      </li>
+                      <!-- <li><a href="/fans/sns/list.do">SNS</a></li> -->
+                      <li><a href="/fans/qna/list.do">안내 및 Q&amp;A</a></li>
+                    </ul>
+                  </dd>
+                </dl>
+
+                <!-- <div class="gotoMain-btn"><a href="/index.do">KIWOOM HEROES</a></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- E : /WEB-INF/views/jsp/layout/top_menu.jsp -->
+    </div>
+    <!--// HEADER -->
+
+    <div id="body">
+      <div class="mainVisual">
+        <div
+          class="swiper-container swiper-initialized swiper-horizontal swiper-backface-hidden"
+        >
+          <div
+            class="swiper-wrapper"
+            id="swiper-wrapper-e7736a1c83710b95e"
+            aria-live="off"
+            style="
+              transition-duration: 0ms;
+              transform: translate3d(-2522px, 0px, 0px);
+            "
+          >
+            <!-- S : 반복 구간-->
+
+            <div
+              class="swiper-slide swiper-slide-prev"
+              role="group"
+              aria-label="1 / 3"
+              style="width: 1261px"
+            >
+              <div class="imgArea">
+                <a href="http://inpk.kr/heroes " target="_blank">
+                  <!-- 대소문자 주의 구분 -->
+
+                  <img
+                    src="./files/mainSlide_File.1/2023/03/10/5565d2f4-d6a5-46b2-9f92-78ca54cb776e.jpg"
+                    alt="키움 히어로즈 공식상품 판매샵"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="2 / 3"
+              style="width: 1261px"
+            >
+              <div class="imgArea">
+                <a
+                  href="https://ticket.interpark.com/Contents/Sports/GoodsInfo?SportsCode=07001&amp;TeamCode=PB003"
+                  target="_blank"
+                >
+                  <!-- 대소문자 주의 구분 -->
+
+                  <img
+                    src="./files/mainSlide_File.1/2023/03/31/c8e1908c-be92-427d-8fca-c3b8501ec45c.jpg"
+                    alt="키움히어로즈 티켓 예매"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="swiper-slide swiper-slide-next"
+              role="group"
+              aria-label="3 / 3"
+              style="width: 1261px"
+            >
+              <div class="imgArea">
+                <img
+                  src="./files/mainSlide_File.1/2024/03/28/dc6738b4-a046-4809-bb36-8971a78636c1.png"
+                  alt="야구박물관 기증공고"
+                />
+              </div>
+            </div>
+
+            <!-- E : 반복 구간-->
+          </div>
+
+          <div
+            class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+          >
+            <span
+              class="swiper-pagination-bullet"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 1"
+            ></span
+            ><span
+              class="swiper-pagination-bullet"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 2"
+            ></span
+            ><span
+              class="swiper-pagination-bullet swiper-pagination-bullet-active"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 3"
+              aria-current="true"
+            ></span
+            ><span
+              class="swiper-pagination-bullet"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 4"
+            ></span>
+          </div>
+          <span
+            class="swiper-notification"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></span>
+        </div>
+      </div>
+
+      <div class="mainResult">
+        <!-- 관리자 체크시 숨김 처리 -->
+
+        <div class="inner-box">
+          <div class="mainLanking">
+            <!-- ranking -->
+
+            <!-- bgLank : topLank, middleLank, bottomLank -->
+
+            <div class="bgLank topLank">10</div>
+
+            <div class="mainRecord">
+              <p class="record">
+                <strong>50</strong> 승 <strong>64</strong> 패
+                <strong>0</strong> 무
+              </p>
+              <p class="winningRate">연속 1패 / 승률 0.439</p>
+            </div>
+          </div>
+
+          <div class="team-arg-box">
+            <button
+              class="swiper-button-prev"
+              tabindex="0"
+              aria-label="Previous slide"
+              aria-controls="swiper-wrapper-0a9c8cd6ec2b2611"
+              aria-disabled="false"
+            >
+              이전
+            </button>
+            <button
+              class="swiper-button-next swiper-button-disabled"
+              disabled=""
+              tabindex="-1"
+              aria-label="Next slide"
+              aria-controls="swiper-wrapper-0a9c8cd6ec2b2611"
+              aria-disabled="true"
+            >
+              다음
+            </button>
+
+            <div
+              class="swiper-container swiper-initialized swiper-horizontal swiper-backface-hidden"
+            >
+              <div
+                class="swiper-wrapper"
+                id="swiper-wrapper-0a9c8cd6ec2b2611"
+                aria-live="polite"
+                style="
+                  transition-duration: 0ms;
+                  transform: translate3d(-2540px, 0px, 0px);
+                "
+              >
+                <!-- S : 반복 구간-->
+                <div
+                  class="swiper-slide"
+                  role="group"
+                  aria-label="1 / 5"
+                  style="width: 635px"
+                >
+                  <div class="team-box">
+                    <div class="game-option">
+                      <div class="date">08/14 (수) 고척</div>
+                      <div class="type">
+                        <p>경기 종료</p>
+                      </div>
+                    </div>
+
+                    <div class="team-vs">
+                      <div class="team">
+                        <div class="club-logo">
+                          <img
+                            src="./html/web_2018/images/index/imgLogo_HT.png"
+                            alt="KIA"
+                          />
+                          <p>선발 황동하</p>
+                        </div>
+                        <div class="score">1</div>
+                      </div>
+                      <div class="team">
+                        <div class="club-logo">
+                          <img
+                            src="./html/web_2018/images/index/imgLogo_WO.png"
+                            alt="키움"
+                          />
+                          <p>선발 후라도</p>
+                        </div>
+                        <div class="score">2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- E : 반복 구간-->
+
+                <!-- S : 반복 구간-->
+                <div
+                  class="swiper-slide"
+                  role="group"
+                  aria-label="2 / 5"
+                  style="width: 635px"
+                >
+                  <div class="team-box">
+                    <div class="game-option">
+                      <div class="date">08/15 (목) 고척</div>
+                      <div class="type">
+                        <p>경기 종료</p>
+                      </div>
+                    </div>
+
+                    <div class="team-vs">
+                      <div class="team">
+                        <div class="club-logo">
+                          <img
+                            src="./html/web_2018/images/index/imgLogo_HT.png"
+                            alt="KIA"
+                          />
+                          <p>선발 양현종</p>
+                        </div>
+                        <div class="score">12</div>
+                      </div>
+                      <div class="team">
+                        <div class="club-logo">
+                          <img
+                            src="./html/web_2018/images/index/imgLogo_WO.png"
+                            alt="키움"
+                          />
+                          <p>선발 헤이수스</p>
+                        </div>
+                        <div class="score">1</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- E : 반복 구간-->
+
+                <!-- S : 반복 구간-->
+                <div
+                  class="swiper-slide"
+                  role="group"
+                  aria-label="3 / 5"
+                  style="width: 635px"
+                >
+                  <div class="team-box">
+                    <div class="game-option">
+                      <div class="date">08/16 (금) 사직</div>
+                      <div class="type">
+                        <p>경기 종료</p>
+                      </div>
+                    </div>
+
+                    <div class="team-vs">
+                      <div class="team">
+                        <div class="club-logo">
+                          <img
+                            src="./html/web_2018/images/index/imgLogo_LT.png"
+                            alt="롯데"
+                          />
+                          <p>선발 반즈</p>
+                        </div>
+                        <div class="score">4</div>
+                      </div>
+                      <div class="team">
+                        <div class="club-logo">
+                          <img
+                            src="./html/web_2018/images/index/imgLogo_WO.png"
+                            alt="키움"
+                          />
+                          <p>선발 이종민</p>
+                        </div>
+                        <div class="score">0</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- E : 반복 구간-->
+
+                <!-- S : 반복 구간-->
+                <div
+                  class="swiper-slide swiper-slide-prev"
+                  role="group"
+                  aria-label="4 / 5"
+                  style="width: 635px"
+                >
+                  <div class="team-box">
+                    <div class="game-option">
+                      <div class="date">08/17 (토) 사직</div>
+                      <div class="type">
+                        <p>경기 종료</p>
+                      </div>
+                    </div>
+
+                    <div class="team-vs">
+                      <div class="team">
+                        <div class="club-logo">
+                          <img
+                            src="./html/web_2018/images/index/imgLogo_LT.png"
+                            alt="롯데"
+                          />
+                          <p>선발 윌커슨</p>
+                        </div>
+                        <div class="score">7</div>
+                      </div>
+                      <div class="team">
+                        <div class="club-logo">
+                          <img
+                            src="./html/web_2018/images/index/imgLogo_WO.png"
+                            alt="키움"
+                          />
+                          <p>선발 하영민</p>
+                        </div>
+                        <div class="score">8</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- E : 반복 구간-->
+
+                <!-- S : 반복 구간-->
+                <div
+                  class="swiper-slide swiper-slide-active"
+                  role="group"
+                  aria-label="5 / 5"
+                  style="width: 635px"
+                >
+                  <div class="team-box">
+                    <div class="game-option">
+                      <div class="date">08/18 (일) 사직</div>
+                      <div class="type">
+                        <p>경기 종료</p>
+                      </div>
+                    </div>
+
+                    <div class="team-vs">
+                      <div class="team">
+                        <div class="club-logo">
+                          <img
+                            src="./html/web_2018/images/index/imgLogo_LT.png"
+                            alt="롯데"
+                          />
+                          <p>선발 이민석</p>
+                        </div>
+                        <div class="score">5</div>
+                      </div>
+                      <div class="team">
+                        <div class="club-logo">
+                          <img
+                            src="./html/web_2018/images/index/imgLogo_WO.png"
+                            alt="키움"
+                          />
+                          <p>선발 김윤하</p>
+                        </div>
+                        <div class="score">4</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- E : 반복 구간-->
+              </div>
+              <span
+                class="swiper-notification"
+                aria-live="assertive"
+                aria-atomic="true"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="link-toolbar">
+        <div class="inner">
+          <h3>히어로즈 바로가기</h3>
+          <div class="item-list">
+            <ul>
+              <li>
+                <a
+                  href="https://ticket.interpark.com/Contents/Sports/GoodsInfo?SportsCode=07001&amp;TeamCode=PB003"
+                  target="_blank"
+                  title="새창열기"
+                  ><img
+                    src="./html/web_2018/images/index/btn_link_toolbar_item1.png"
+                    alt="티켓 예매 바로가기"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/heroesbaseballclub/"
+                  target="_blank"
+                  title="새창열기"
+                  ><img
+                    src="./html/web_2018/images/index/btn_link_toolbar_item2.png"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="/heroes/stadium/location.do"
+                  ><img
+                    src="./html/web_2018/images/index/btn_link_toolbar_item3.png"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="club-news">
+        <div class="inner">
+          <h3>
+            <strong>히어로즈 구단 소식</strong>
+            <a href="/story/heroesNews/list.do">더보기</a>
+          </h3>
+          <div class="item-list">
+            <ul>
+              <li>
+                <a href="/story/heroesNews/view.do?num=21905" class="item-box">
+                  <div class="photo">
+                    <img
+                      src="./files/bbs.6/2024/08/17/c5653a41-a995-4b9d-a6d4-f0af921b35d1.png"
+                      alt="2024 KBO리그 정규시즌 중계일정(8.20 ~ 8.25)"
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">
+                      2024 KBO리그 정규시즌 중계일정(8.20 ~ 8.25)
+                    </div>
+                    <div class="date">2024-08-17</div>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="/story/heroesNews/view.do?num=21902" class="item-box">
+                  <div class="photo">
+                    <img
+                      src="./files/bbs.6/2024/08/14/07ef1392-ed25-4b4e-b6eb-15cddf3e57fe.jpg"
+                      alt="'나이키와 함께하는 7월 언성 히어로 시상식' 실시"
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">
+                      '나이키와 함께하는 7월 언성 히어로 시상식' 실시
+                    </div>
+                    <div class="date">2024-08-14</div>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="/story/heroesNews/view.do?num=21900" class="item-box">
+                  <div class="photo">
+                    <img
+                      src="./files/bbs.6/2024/08/13/3b5e7c30-c801-449b-8c54-68c8a10136dd.jpg"
+                      alt="15일(목) KIA전 광복절 기념 시구 진행"
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">15일(목) KIA전 광복절 기념 시구 진행</div>
+                    <div class="date">2024-08-13</div>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="/story/heroesNews/view.do?num=21899" class="item-box">
+                  <div class="photo">
+                    <img
+                      src="./files/bbs.6/2024/08/13/0d337df6-828b-4004-abd5-3b2ef9f735fb.png"
+                      alt="퓨처스리그 서머리그 티켓 판매"
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">퓨처스리그 서머리그 티켓 판매</div>
+                    <div class="date">2024-08-13</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="club-movie">
+        <div class="inner">
+          <h3>
+            <strong>히어로즈 영상</strong>
+            <a href="/story/movie/youtube-list.do">더보기</a>
+          </h3>
+          <div class="item-list">
+            <ul class="youtube2020Type">
+              <li>
+                <a
+                  href="https://youtu.be/VFdoICv-QUY"
+                  title="따봉 후라도야 고마워👍 l 히어로캠 (08.14)"
+                  class="item-box"
+                  target="_blank"
+                  ><div class="photo">
+                    <img
+                      src="https://i.ytimg.com/vi/VFdoICv-QUY/mqdefault.jpg"
+                      alt="youtube 따봉 후라도야 고마워👍 l 히어로캠 (08.14) 영상 섬네일 "
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">
+                      따봉 후라도야 고마워👍 l 히어로캠 (08.14)
+                    </div>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/cBs4MADxGzM"
+                  title="[후토크] 최주환 카페에 갔습니다. 카페가 열린 건 아니고요 그냥 카페에서 최주환 생각했습니다. 사실 커피도 안마셨습니다. 그냥 최주환 상태입니다 (08.14)"
+                  class="item-box"
+                  target="_blank"
+                  ><div class="photo">
+                    <img
+                      src="https://i.ytimg.com/vi/cBs4MADxGzM/mqdefault.jpg"
+                      alt="youtube [후토크] 최주환 카페에 갔습니다. 카페가 열린 건 아니고요 그냥 카페에서 최주환 생각했습니다. 사실 커피도 안마셨습니다. 그냥 최주환 상태입니다 (08.14) 영상 섬네일 "
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">
+                      [후토크] 최주환 카페에 갔습니다. 카페가 열린 건 아니고요
+                      그냥 카페에서 최주환 생각했습니다. 사실 커피도
+                      안마셨습니다. 그냥 최주환 상태입니다 (08.14)
+                    </div>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/vfOj_zukTzE"
+                  title="힘겨운 날 견뎌낸 시간만큼 더 밝게 빛날 그날을 위해 ✨ #위클리매드무비"
+                  class="item-box"
+                  target="_blank"
+                  ><div class="photo">
+                    <img
+                      src="https://i.ytimg.com/vi/vfOj_zukTzE/mqdefault.jpg"
+                      alt="youtube 힘겨운 날 견뎌낸 시간만큼 더 밝게 빛날 그날을 위해 ✨ #위클리매드무비 영상 섬네일 "
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">
+                      힘겨운 날 견뎌낸 시간만큼 더 밝게 빛날 그날을 위해 ✨
+                      #위클리매드무비
+                    </div>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/fh-nIo01oh4"
+                  title="[영웅B컷] 야없날에 영웅B컷 보러왔어요~ 🎥"
+                  class="item-box"
+                  target="_blank"
+                  ><div class="photo">
+                    <img
+                      src="https://i.ytimg.com/vi/fh-nIo01oh4/mqdefault.jpg"
+                      alt="youtube [영웅B컷] 야없날에 영웅B컷 보러왔어요~ 🎥 영상 섬네일 "
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">
+                      [영웅B컷] 야없날에 영웅B컷 보러왔어요~ 🎥
+                    </div>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/jB_K6q0KeSA"
+                  title="행복한 히어로 로니 도슨, 고척돔에서의 마지막 날 (08.08)"
+                  class="item-box"
+                  target="_blank"
+                  ><div class="photo">
+                    <img
+                      src="https://i.ytimg.com/vi/jB_K6q0KeSA/mqdefault.jpg"
+                      alt="youtube 행복한 히어로 로니 도슨, 고척돔에서의 마지막 날 (08.08) 영상 섬네일 "
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">
+                      행복한 히어로 로니 도슨, 고척돔에서의 마지막 날 (08.08)
+                    </div>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/Ymf-rdWVORY"
+                  title="10승 투수 후라도를 봐… 짱이지?ㅣ히어로캠 (08.08)"
+                  class="item-box"
+                  target="_blank"
+                  ><div class="photo">
+                    <img
+                      src="https://i.ytimg.com/vi/Ymf-rdWVORY/mqdefault.jpg"
+                      alt="youtube 10승 투수 후라도를 봐… 짱이지?ㅣ히어로캠 (08.08) 영상 섬네일 "
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">
+                      10승 투수 후라도를 봐… 짱이지?ㅣ히어로캠 (08.08)
+                    </div>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/sgMYu1jV30E"
+                  title="이용규 KBO 역대 22번째, 개인 통산 2000경기 출장 달성 기념 시상식 (feat. 선수들의 축하 메시지 💌)"
+                  class="item-box"
+                  target="_blank"
+                  ><div class="photo">
+                    <img
+                      src="https://i.ytimg.com/vi/sgMYu1jV30E/mqdefault.jpg"
+                      alt="youtube 이용규 KBO 역대 22번째, 개인 통산 2000경기 출장 달성 기념 시상식 (feat. 선수들의 축하 메시지 💌) 영상 섬네일 "
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">
+                      이용규 KBO 역대 22번째, 개인 통산 2000경기 출장 달성 기념
+                      시상식 (feat. 선수들의 축하 메시지 💌)
+                    </div>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/dWrvbUtA210"
+                  title="[후토크] 명품 케미 자랑하는 히어로즈 포수조 💘 (08.08)"
+                  class="item-box"
+                  target="_blank"
+                  ><div class="photo">
+                    <img
+                      src="https://i.ytimg.com/vi/dWrvbUtA210/mqdefault.jpg"
+                      alt="youtube [후토크] 명품 케미 자랑하는 히어로즈 포수조 💘 (08.08) 영상 섬네일 "
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">
+                      [후토크] 명품 케미 자랑하는 히어로즈 포수조 💘 (08.08)
+                    </div>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/Bx1j_fNnEbA"
+                  title="[퓨처스 서머리그] 오랜만에 만난 선수들과의 근황 토크와 함께 승리의 히어로캠까지! (08.02)"
+                  class="item-box"
+                  target="_blank"
+                  ><div class="photo">
+                    <img
+                      src="https://i.ytimg.com/vi/Bx1j_fNnEbA/mqdefault.jpg"
+                      alt="youtube [퓨처스 서머리그] 오랜만에 만난 선수들과의 근황 토크와 함께 승리의 히어로캠까지! (08.02) 영상 섬네일 "
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">
+                      [퓨처스 서머리그] 오랜만에 만난 선수들과의 근황 토크와
+                      함께 승리의 히어로캠까지! (08.02)
+                    </div>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/-Md3qKpTkR4"
+                  title="[후토크] 무슨 말이 더 필요할까요? 이용규 후토크인데... (08.01)"
+                  class="item-box"
+                  target="_blank"
+                  ><div class="photo">
+                    <img
+                      src="https://i.ytimg.com/vi/-Md3qKpTkR4/mqdefault.jpg"
+                      alt="youtube [후토크] 무슨 말이 더 필요할까요? 이용규 후토크인데... (08.01) 영상 섬네일 "
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">
+                      [후토크] 무슨 말이 더 필요할까요? 이용규 후토크인데...
+                      (08.01)
+                    </div>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/uagOLaMhdFg"
+                  title="[후토크] 외쳐! 갓상권✨ (08.03)"
+                  class="item-box"
+                  target="_blank"
+                  ><div class="photo">
+                    <img
+                      src="https://i.ytimg.com/vi/uagOLaMhdFg/mqdefault.jpg"
+                      alt="youtube [후토크] 외쳐! 갓상권✨ (08.03) 영상 섬네일 "
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">[후토크] 외쳐! 갓상권✨ (08.03)</div>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/i4p6OqGXUVM"
+                  title="??? : 고작 6점 차입니다 여러분!!!!, 8월 첫 시작을 대역전승으로! ㅣ히어로캠 (08.01)"
+                  class="item-box"
+                  target="_blank"
+                  ><div class="photo">
+                    <img
+                      src="https://i.ytimg.com/vi/i4p6OqGXUVM/mqdefault.jpg"
+                      alt="youtube ??? : 고작 6점 차입니다 여러분!!!!, 8월 첫 시작을 대역전승으로! ㅣ히어로캠 (08.01) 영상 섬네일 "
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">
+                      ??? : 고작 6점 차입니다 여러분!!!!, 8월 첫 시작을
+                      대역전승으로! ㅣ히어로캠 (08.01)
+                    </div>
+                  </div></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="all-about">
+        <dl>
+          <dt>
+            <h3>All about KIWOOM HEROES</h3>
+            <p>히어로즈의 다양한 채널과 함께하세요.</p>
+          </dt>
+          <dd>
+            <ul>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UC_MA8-XEaVmvyayPzG66IKg"
+                  target="_blank"
+                  title="새창열림"
+                >
+                  <!-- <img src="/html/front/web_2018/images/index/btn_about_item1.png" alt=""> -->
+                  <img
+                    src="./html/web_2018/images/index/PC_youtube_58x53.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/heroesbaseballclub/"
+                  target="_blank"
+                  title="새창열림"
+                >
+                  <!-- <img src="/html/front/web_2018/images/index/btn_about_item2.png" alt=""> -->
+                  <img
+                    src="./html/web_2018/images/index/PC_instagram_54x54.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/kiwoomheroesbaseballclub/"
+                  target="_blank"
+                  title="새창열림"
+                >
+                  <!-- <img src="/html/front/web_2018/images/index/btn_about_item3.png" alt=""> -->
+                  <img
+                    src="./html/web_2018/images/index/PC_facebook_54x54.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+
+      <span class="toTop" style="display: none">
+        <a href="#header">위로 가기</a>
+      </span>
+    </div>
+
+    <!-- footer -->
+
+    <!-- footer -->
+    <!-- S : /WEB-INF/views/jsp/layout/footer.jsp -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <!-- <script src="/html/front/web_js/grayscale.js" type="text/javascript"></script>
+  <script src="/html/front/web_js/functions.js" type="text/javascript"></script> -->
+
+    <!-- quick -->
+    <div id="quick">
+      <ul>
+        <li>
+          <a href="http://inpk.kr/heroes " target="_blank" title="새 창 열림"
+            ><img
+              src="./files/main.1/2018/12/04/6486c9ee-019f-484a-a3e9-15ac3f48ce61.jpg"
+              alt="히어로즈샵"
+          /></a>
+        </li>
+
+        <li>
+          <a
+            href="https://ticket.interpark.com/Contents/Sports/GoodsInfo?SportsCode=07001&amp;TeamCode=PB003"
+            target="_blank"
+            title="새 창 열림"
+            ><img
+              src="./files/main.1/2018/03/20/43cda900-32c6-466b-91d4-1a72429cc017.png"
+              alt="티켓예매하기"
+          /></a>
+        </li>
+      </ul>
+    </div>
+    <!--// quick -->
+
+    <div class="footerWrap">
+      <div id="footer">
+        <div class="sponsors-box">
+          <div class="mainSponsor">
+            <h2>MAIN SPONSOR</h2>
+            <a href="http://www.kiwoom.com" target="_blank" title="새 창 열림"
+              >키움증권</a
+            >
+          </div>
+
+          <h2>SPONSORS</h2>
+
+          <div class="sponsorBanner">
+            <div class="bx-wrapper" style="max-width: 920px; margin: 0px auto">
+              <div
+                class="bx-viewport"
+                style="
+                  width: 100%;
+                  overflow: hidden;
+                  position: relative;
+                  height: 88px;
+                "
+              >
+                <ul
+                  style="
+                    width: 4015%;
+                    position: relative;
+                    transition-duration: 1s;
+                    transform: translate3d(-1380px, 0px, 0px);
+                  "
+                >
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="http://www.goyang.go.kr "
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2020/04/17/81f71f17-e277-438b-a95e-014b243971d2.png"
+                        alt="고양시청"
+                    /></a>
+                  </li>
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="http://www.cmhospital.co.kr/index.php"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2020/12/02/50d87e88-035f-4243-8833-f9e3b940985b.png"
+                        alt="CM병원"
+                    /></a>
+                  </li>
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="http://www.hanaromf.com/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2018/03/20/ec067faa-fdb1-4365-8f02-3772df785b92.png"
+                        alt="하나로의료재단"
+                    /></a>
+                  </li>
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="http://naava.kr/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/04/13/0d5a8db2-bc72-47ca-a43e-acdafef80e50.png"
+                        alt="나아바코리아"
+                    /></a>
+                  </li>
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="http://www.pulmuonewater.com"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2022/04/01/ae3c016f-de5f-4660-bcc8-242076d7976f.png"
+                        alt="풀무원샘물"
+                    /></a>
+                  </li>
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="https://soominsooppilates.modoo.at/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2023/04/02/6c043674-a72c-4aca-925e-d02f11008a85.jpg"
+                        alt="숨in숲 필라테스"
+                    /></a>
+                  </li>
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="https://nutridday.com/?NaPm=ct%3Dlumeiz4x%7Cci%3Dcheckout%7Ctr%3Dds%7Ctrx%3Dnull%7Chk%3Dcf1970263ec0bc4cccfac7e07a38755b517d7ee0"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/04/05/c369c1aa-ce44-4e02-9176-93edc51f9b81.png"
+                        alt="뉴트리디데이"
+                    /></a>
+                  </li>
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="https://www.syncombine.com/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/04/27/da647af4-0138-4486-b36f-f24a583fd2c0.png"
+                        alt="싱컴바인"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="http://www.sgc.co.kr/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2021/04/01/0183a2cf-e12d-45d8-9e4d-a2b60293ae42.png"
+                        alt="SGC"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.kblife.co.kr/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2023/03/22/e287fda4-f426-498c-b18c-2d0146e28123.png"
+                        alt="KB라이프생명"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="http://www.nike.co.kr"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2016/03/30/d0f609ed-b245-4859-845f-953d376a5ae1.png"
+                        alt="나이키"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="http://www.teianmotors.com"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2023/03/23/1cbf0598-d199-4d1a-9f11-a765851d7366.png"
+                        alt="태안모터스"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://daewon.co.kr/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2022/04/01/1ab88df1-9294-476a-8a39-3dc699d7aac5.png"
+                        alt="대원"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://flex.team/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2023/10/16/01e83640-a08f-4d77-9d92-9eabe59d0bcd.png"
+                        alt="flex"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.saramin.co.kr/zf_user/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2021/09/03/c5e4d0f9-e4b9-4ba6-982f-516c339f3b12.png"
+                        alt="사람인"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="http://www.dkpco.co.kr"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2020/04/17/0a1f7ea5-43cc-4f78-a77c-131ac7ce782c.png"
+                        alt="동광제약"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.panasonic.co.kr/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2020/04/17/afaccacb-364c-4ddf-a232-d746cd92a821.png"
+                        alt="파나소닉"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="http://www.interpark.com"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/03/26/b473c88d-e4bd-4cd1-9611-8e292327c073.png"
+                        alt="인터파크"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.hitejinro.com/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2022/04/14/5f671889-f215-4a81-9da8-1751e67a2d75.png"
+                        alt="하이트진로"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.mirae-n.com/main/mn-main-01.frm"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/04/13/f7620e78-9828-4ddd-8f69-d8e918a8cfdc.png"
+                        alt="미래엔"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.shgas.co.kr/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/03/26/aa61df59-d7e4-4572-8f72-9a05878bd036.png"
+                        alt="미래엔서해에너지"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.lexus.co.kr/?utm_campaign=kiwoom&amp;utm_source=digital&amp;utm_medium=1&amp;utm_content=1"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/03/26/2a5f14bd-5b10-40ef-902f-c92189cffc26.png"
+                        alt="LEXUS"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.tving.com"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/03/26/2742c9af-70ec-4ebd-bf11-52ecec2f1705.png"
+                        alt="티빙"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="http://www.dongsuh.co.kr/2017/00_main/main.asp"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2023/03/17/3576a663-0a8f-4689-91c2-5eb918a00689.png"
+                        alt="동서식품"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="http://www.baekjosink.com/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2022/04/01/5fed0284-ad3b-498b-9a6d-0167ebcf3ddd.png"
+                        alt="백조씽크"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.kfcc.co.kr/index.do"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2021/09/03/8cf1555e-2135-4911-b3c9-fd658d90a982.png"
+                        alt="새마을금고중앙회"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.lh.or.kr"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2023/04/06/e3649c2d-df6d-4b76-92ad-053b99bbd610.png"
+                        alt="한국토지주택공사"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="http://www.hyundaipharm.co.kr/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2018/03/20/ddf5589a-b0a7-44cf-8d9a-eff25716911c.png"
+                        alt="현대약품"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.dbcons.co.kr/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2022/04/01/d1ffa273-e216-4f3a-879e-327eecaf006c.png"
+                        alt="대방건설"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="http://www.ht.co.kr/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2018/03/20/497c980e-6049-4dc8-98d2-88536731dd11.png"
+                        alt="해태제과"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="http://www.kimeye.com"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2018/03/20/125fbe9c-a7c4-4501-8be2-5e2e6bfab730.png"
+                        alt="김안과병원"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.thehaam.kr/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2023/08/25/51a42a2a-cfff-4f31-85db-24e23517c32c.png"
+                        alt="더함"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://smartstore.naver.com/mzkorea "
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2023/05/10/dade689c-77cb-4217-83b8-28e6957eb4dc.png"
+                        alt="앰지코리아"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://clickdk.com/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/03/26/94e8a970-593f-4108-9092-4c3c152f8fc7.png"
+                        alt="대광건영"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.goodyear.co.kr"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/03/26/9f14302c-90ed-47c9-9f1c-c86118cf3008.png"
+                        alt="굿이어타이어"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a href="www.isu.co.kr" target="_blank" title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/03/26/0aab8380-3191-4346-a9af-b9687a627d57.png"
+                        alt="이수그룹"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.mycaryoucar.com/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/03/26/61772258-b169-4186-b4eb-78b9a48077c6.png"
+                        alt="내차니카"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.gurohope.or.kr/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/03/26/3aea018c-cbd4-4b6c-af44-212c4db81fd3.png"
+                        alt="구로희망복지재단"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="http://www.goyang.go.kr "
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2020/04/17/81f71f17-e277-438b-a95e-014b243971d2.png"
+                        alt="고양시청"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="http://www.cmhospital.co.kr/index.php"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2020/12/02/50d87e88-035f-4243-8833-f9e3b940985b.png"
+                        alt="CM병원"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="http://www.hanaromf.com/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2018/03/20/ec067faa-fdb1-4365-8f02-3772df785b92.png"
+                        alt="하나로의료재단"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="http://naava.kr/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/04/13/0d5a8db2-bc72-47ca-a43e-acdafef80e50.png"
+                        alt="나아바코리아"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="http://www.pulmuonewater.com"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2022/04/01/ae3c016f-de5f-4660-bcc8-242076d7976f.png"
+                        alt="풀무원샘물"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://soominsooppilates.modoo.at/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2023/04/02/6c043674-a72c-4aca-925e-d02f11008a85.jpg"
+                        alt="숨in숲 필라테스"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://nutridday.com/?NaPm=ct%3Dlumeiz4x%7Cci%3Dcheckout%7Ctr%3Dds%7Ctrx%3Dnull%7Chk%3Dcf1970263ec0bc4cccfac7e07a38755b517d7ee0"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/04/05/c369c1aa-ce44-4e02-9176-93edc51f9b81.png"
+                        alt="뉴트리디데이"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                  >
+                    <a
+                      href="https://www.syncombine.com/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2024/04/27/da647af4-0138-4486-b36f-f24a583fd2c0.png"
+                        alt="싱컴바인"
+                    /></a>
+                  </li>
+
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="http://www.sgc.co.kr/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2021/04/01/0183a2cf-e12d-45d8-9e4d-a2b60293ae42.png"
+                        alt="SGC"
+                    /></a>
+                  </li>
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="https://www.kblife.co.kr/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2023/03/22/e287fda4-f426-498c-b18c-2d0146e28123.png"
+                        alt="KB라이프생명"
+                    /></a>
+                  </li>
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="http://www.nike.co.kr"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2016/03/30/d0f609ed-b245-4859-845f-953d376a5ae1.png"
+                        alt="나이키"
+                    /></a>
+                  </li>
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="http://www.teianmotors.com"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2023/03/23/1cbf0598-d199-4d1a-9f11-a765851d7366.png"
+                        alt="태안모터스"
+                    /></a>
+                  </li>
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="https://daewon.co.kr/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2022/04/01/1ab88df1-9294-476a-8a39-3dc699d7aac5.png"
+                        alt="대원"
+                    /></a>
+                  </li>
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="https://flex.team/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2023/10/16/01e83640-a08f-4d77-9d92-9eabe59d0bcd.png"
+                        alt="flex"
+                    /></a>
+                  </li>
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="https://www.saramin.co.kr/zf_user/"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2021/09/03/c5e4d0f9-e4b9-4ba6-982f-516c339f3b12.png"
+                        alt="사람인"
+                    /></a>
+                  </li>
+                  <li
+                    style="
+                      float: left;
+                      list-style: none;
+                      position: relative;
+                      width: 115px;
+                    "
+                    class="bx-clone"
+                  >
+                    <a
+                      href="http://www.dkpco.co.kr"
+                      target="_blank"
+                      title="새 창 열림"
+                      ><img
+                        src="./files/sponcor.1/2020/04/17/0a1f7ea5-43cc-4f78-a77c-131ac7ce782c.png"
+                        alt="동광제약"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-list-box">
+          <div class="item-box">
+            <ul class="link-list">
+              <li>
+                <a href="./privacyStatement.html">개인정보처리방침</a>
+              </li>
+              <li><a href="./termsOfUse.html">이용약관</a></li>
+              <li><a href="./refuseEmail.html">이메일무단수집거부</a></li>
+
+              <!-- <li><a href="/fans/link/list.do">관련사이트</a></li> -->
+            </ul>
+            <div class="txt-add">
+              서울특별시 구로구 경인로 430(고척동, 고척스카이돔구장내)
+              T.02-3660-1000 F.02-3660-1099<br />
+              Copyright (C) Heroes, All Rights Reserved.
+            </div>
+          </div>
+          <div class="item-box">
+            <img
+              src="./html/web_2018/images/common/txt_footer.png"
+              alt="키움히어로즈 프로야구단 KIWOON HEROES BASEBALL CLUB"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      //<![CDATA[
+      $("div.sponsorBanner ul").bxSlider({
+        auto: true,
+        autoDelay: 1,
+        pause: 5000,
+        speed: 1000,
+        pager: false,
+        controls: false,
+        minSlides: 8,
+        maxSlides: 8,
+        moveSlides: 1,
+        slideWidth: 115,
+      });
+      //]]>
+    </script>
+
+    <!-- E : /WEB-INF/views/jsp/layout/footer.jsp -->
+    <!--// footer -->
+
+    <!--// footer -->
+
+    <script type="text/javascript">
+      //<![CDATA[
+
+      //background img
+      var docHeight = $(document).height();
+      var bgPlayer = $(".bgPlayer");
+      var bgPlayerFilter = $(".bgPlayer.filter");
+      var group2H = $(".group2").height();
+      var group3H = $(".group3").height();
+      //$(bgPlayer).height(docHeight);
+      //$(bgPlayer, bgPlayerFilter).parallax({ speed: 0.3, axis: 'y' });
+      $(bgPlayer).parallax({ speed: 0.3, axis: "y" });
+      $(bgPlayerFilter).parallax({ speed: 0.9, axis: "y" });
+
+      $(window).resize(function () {
+        //$(bgPlayer).height(docHeight);
+      });
+
+      //news more
+      var doubleFlag = false;
+      function doubleCheck() {
+        if (doubleFlag) {
+          $(".group3").show();
+          //$(bgPlayer).height(docHeight + group2H + group3H - 263);
+          $(".btnNewsMore").hide();
+        } else {
+          doubleFlag = true;
+          $(".group2").show();
+          //$(bgPlayer).height(docHeight + group2H - 263);
+        }
+      }
+      function callMore() {
+        if (doubleCheck()) return;
+      }
+      //]]>
+    </script>
+
+    <iframe
+      name="oauth2relay246985918"
+      id="oauth2relay246985918"
+      src="https://accounts.google.com/o/oauth2/postmessageRelay?parent=https%3A%2F%2Fheroesbaseball.co.kr&amp;jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.ko.GU89GoD0A6U.O%2Fam%3DAAAg%2Fd%3D1%2Frs%3DAHpOoo-SbuL-nW9Yn3IkFMAPjAQzxyTZSQ%2Fm%3D__features__#rpctoken=485810377&amp;forcesecure=1"
+      tabindex="-1"
+      aria-hidden="true"
+      style="width: 1px; height: 1px; position: absolute; top: -100px"
+    ></iframe
+    ><iframe
+      id="apiproxya00c75f9fec55d73750996de63b12aaf6ad1c23d0.1817763816"
+      name="apiproxya00c75f9fec55d73750996de63b12aaf6ad1c23d0.1817763816"
+      src="https://content.googleapis.com/static/proxy.html?usegapi=1&amp;jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.ko.GU89GoD0A6U.O%2Fam%3DAAAg%2Fd%3D1%2Frs%3DAHpOoo-SbuL-nW9Yn3IkFMAPjAQzxyTZSQ%2Fm%3D__features__#parent=https%3A%2F%2Fheroesbaseball.co.kr&amp;rpctoken=1388831174"
+      tabindex="-1"
+      aria-hidden="true"
+      style="
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        top: -100px;
+        display: none;
+      "
+    ></iframe
+    ><iframe
+      id="apiproxy1577523b6a25bcda996a364ad3a3a6e80f0ce4680.2046829517"
+      name="apiproxy1577523b6a25bcda996a364ad3a3a6e80f0ce4680.2046829517"
+      src="https://content-youtube.googleapis.com/static/proxy.html?usegapi=1&amp;jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.ko.GU89GoD0A6U.O%2Fam%3DAAAg%2Fd%3D1%2Frs%3DAHpOoo-SbuL-nW9Yn3IkFMAPjAQzxyTZSQ%2Fm%3D__features__#parent=https%3A%2F%2Fheroesbaseball.co.kr&amp;rpctoken=587783617"
+      tabindex="-1"
+      aria-hidden="true"
+      style="
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        top: -100px;
+        display: none;
+      "
+    ></iframe>
+  </body>
+</html>
